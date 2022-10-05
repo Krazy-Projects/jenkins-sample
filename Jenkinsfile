@@ -4,11 +4,6 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'npm i express'
-            }
-        }
-        stage('build') {
-            steps {
                 sh 'node --version'
             }
         }
