@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'npm init -y'
+                sh 'npm i express'
             }
         }
         stage('build') {
