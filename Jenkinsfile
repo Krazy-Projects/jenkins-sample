@@ -1,10 +1,11 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'node:16.17.1-alpine' } }
+    agent { dockerfile true }
     stages {
-        stage('test') {
+        stage('Test') {
             steps {
                 sh 'node --version'
+                sh 'svn --version'
             }
         }
     }
